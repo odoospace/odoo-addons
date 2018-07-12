@@ -1,0 +1,14 @@
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="analytic_analytic_account_howknowus_form">
+            <field name="name">analytic.analytic.account.howknowus.form</field>
+            <field name="model">account.analytic.account</field>
+            <field name="inherit_id" ref="analytic.view_account_analytic_account_form" />
+            <field name="arch" type="xml">
+            	<field name="currency_id" position="after">
+	            	<field name="howknowus_id" widget="many2many_tags" options="{'no_create_edit':'1'}"/>
+	            </field>
+	        </field>  
+       	</record>
+    </data>
+</openerp>
