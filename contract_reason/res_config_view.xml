@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	    <record id="view_contractreason_tree" model="ir.ui.view">
+            <field name="name">res.contractreason.tree</field>
+            <field name="model">contractreason</field>
+            <field name="view_type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Origins">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+	    <record id="action_res_contractreason" model="ir.actions.act_window">
+            <field name="name">How know us</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">contractreason</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="view_contractreason_tree"/>
+            <field name="help">Create and manage the type of origins of the clients.</field>
+        </record>
+
+        <menuitem action="action_res_contractreason" id="menu_action_res_contractreason" parent="base.menu_custom"/>
+       	
+        </data>
+</openerp>
+
