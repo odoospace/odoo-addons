@@ -18,10 +18,10 @@
             <field name="res_model">how_know_us.how_know_us</field>
             <field name="view_type">form</field>
             <field name="view_id" ref="view_howknowus_tree"/>
-            <field name="help">Create and manage the types of origin of the clients.</field>
+            <field name="help">Create and manage the type of origins of the clients.</field>
         </record>
 
-        <menuitem action="action_res_howknowus" id="menu_action_res_howknowus" parent="base.menu_config"/>
+        <menuitem action="action_res_howknowus" id="menu_action_res_howknowus" parent="base.menu_custom"/>
        	
         </data>
 </openerp>
