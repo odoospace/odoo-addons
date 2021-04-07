@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="contract_contract_contractreason_form">
+            <field name="name">contract.contract.contractreason.form</field>
+            <field name="model">contract.contract</field>
+            <field name="inherit_id" ref="contract.contract_contract_form_view" />
+            <field name="arch" type="xml">
+            	<field name="partner_id" position="after">
+	            	<field name="contractreason_ids" widget="many2many_tags" options="{'no_create_edit':'1'}"/>
+	            </field>
+	        </field>  
+       	</record>
+    </data>
+</odoo>

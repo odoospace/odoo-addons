@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
+<odoo>
     <data>
 	    <record id="view_contractreason_tree" model="ir.ui.view">
             <field name="name">res.contractreason.tree</field>
@@ -24,5 +24,5 @@
         <menuitem action="action_res_contractreason" id="menu_action_res_contractreason" parent="base.menu_custom"/>
        	
         </data>
-</openerp>
+</odoo>
 
