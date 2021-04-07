@@ -20,13 +20,13 @@
     'version': '12.0.0.0.4',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'analytic'],
+    'depends': ['base', 'contract'],
 
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'view.xml',
-        'res_config_view.xml'
+        'views/view.xml',
+        'views/res_config_view.xml'
     ],
     # only loaded in demonstration mode
 #     'demo': [

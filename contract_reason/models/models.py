@@ -9,7 +9,7 @@ class ContractReason(models.Model):
 
 class AccountAnalyticAccount(models.Model):
 
-	_inherit = 'account.analytic.account'
+	_inherit = 'contract.contract'
 
 	contractreason_ids = fields.Many2many('contractreason', string='How did he know us?', required=True)
         
